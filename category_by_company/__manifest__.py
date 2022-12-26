@@ -37,7 +37,7 @@
     'price': 17.99,
     'currency': "EUR",
     'images': ['images/main_screenshot.png'], 
-    'depends': ['base'],
+    'depends': ["base", "sale"],
     "data": [
         'views/category.xml',
     ],
