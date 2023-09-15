@@ -6,6 +6,7 @@ class MrpBom(models.Model):
     bom_line_ids = fields.One2many('mrp.bom.line', 'bom_id', 'BoM Lines', domain= [('display_type', '=', False)], copy=False)
     bom_line_ids_with_sections = fields.One2many('mrp.bom.line', 'bom_id', 'BoM Lines', copy=True)
 
+
 class MrpBomLine(models.Model):
     _inherit = 'mrp.bom.line'
 

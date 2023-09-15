@@ -1,7 +1,7 @@
 <odoo>
     <data>
-        <record id="mrp_bom_form_view_section" model="ir.ui.view">
-            <field name="name">mrp_bom_form_view_section</field>
+        <record id="bom_form_view_section_gsi" model="ir.ui.view">
+            <field name="name">bom_form_view_section_gsi</field>
             <field name="model">mrp.bom</field>
             <field name="inherit_id" ref="mrp.mrp_bom_form_view"/>
             <field name="arch" type="xml">

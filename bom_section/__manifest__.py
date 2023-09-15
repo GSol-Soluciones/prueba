@@ -1,0 +1,42 @@
+# -*- coding: utf-8 -*-
+#????????????????????????????????????????????????????????????????????????????
+#?                                                                          ?
+#?			 ,o888888o.      d888888o.       ,o888888o.     8 8888          ?
+#?			8888     `88.  .`8888:' `88.  . 8888     `88.   8 8888          ?
+#?		 ,8 8888       `8. 8.`8888.   Y8 ,8 8888       `8b  8 8888          ?
+#?		 88 8888           `8.`8888.     88 8888        `8b 8 8888          ?
+#?		 88 8888            `8.`8888.    88 8888         88 8 8888          ?
+#?		 88 8888             `8.`8888.   88 8888         88 8 8888          ?
+#?		 88 8888   8888888    `8.`8888.  88 8888        ,8P 8 8888          ?
+#?		 `8 8888       .8'8b   `8.`8888. `8 8888       ,8P  8 8888          ?
+#?			8888     ,88' `8b.  ;8.`8888  ` 8888     ,88'   8 8888          ?
+#?			 `8888888P'    `Y8888P ,88P'     `8888888P'     8 888888888888  ? 
+#?                                                                          ?
+#?     SOFTWARE DEVELOPED AND SUPPORTED BY GSol Soluciones Informáticas     ?
+#?                       COPYRIGHT (C) 2020 - TODAY                         ?
+#?                           http://www.gsol.es                             ?
+#?                                                                          ?
+#????????????????????????????????????????????????????????????????????????????
+{
+    'name': "Bom sections",
+
+    'summary': """
+        Add Sections and Note in BOM""",
+
+    'description': """
+    Add Sections and Note in BOM
+    """,
+
+    'author': "Jorge Aparici",
+    'website': "https://www.gsol.es",
+
+    'category': 'Manufacturing/Manufacturing',
+    'version': '16.0.0.1',
+
+    'depends': ['mrp'],
+    'license': 'AGPL-3',
+    'data': [
+        'views/bom_view.xml'
+    ],
+    'installable' : True,
+}
