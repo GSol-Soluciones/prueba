@@ -32,7 +32,7 @@
     'website': "https://www.gsol.es",
 
     'category': 'documents',
-    'version': '16.0.0.1',
+    'version': '16.0.0.2',
 
     'depends': ['documents'],
     'license': 'AGPL-3',

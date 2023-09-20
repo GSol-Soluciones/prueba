@@ -6,6 +6,7 @@ class Document(models.Model):
 
     po_ids = fields.Text(string="PO", compute='_compute_purchase_order_value', store=True)
 
+    @api.depends('res_model','res_id')
     def _compute_purchase_order_value(self):
         for rec in self:
             if rec.res_model == 'product.template':
