@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="document_view_search_inherit_gsi" model="ir.ui.view">
+    <record id="document_view_search_inherit" model="ir.ui.view">
         <field name="model">documents.document</field>
         <field name="inherit_id" ref="documents.document_view_search"/>
         <field name="arch" type="xml">
@@ -10,22 +10,23 @@
         </field>
     </record>
 
-        <record id="document_view_kanban_inherit_gsi" model="ir.ui.view">
+        <record id="document_view_kanban_inherit" model="ir.ui.view">
         <field name="model">documents.document</field>
         <field name="inherit_id" ref="documents.document_view_kanban"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='name']" position='after'>
                 <field name="po_ids"/>
+                <field name="purchase_line"/>
             </xpath>
         </field>
     </record>
-
-     <record id="document_view_form_inherit_gsi" model="ir.ui.view">
+     <record id="document_view_form_inherit" model="ir.ui.view">
         <field name="model">documents.document</field>
         <field name="inherit_id" ref="documents.document_view_form"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='name']" position='after'>
                 <field name="po_ids" invisible="1"/>
+                <field name="purchase_line"/>
             </xpath>
         </field>
     </record>
